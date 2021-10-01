@@ -1,0 +1,559 @@
+.ant-layout, .ant-layout-header, .ant-layout-content, .ant-layout-footer {
+    background: #f6ffed;
+}
+
+/* menu custom */
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+    color: #092b00;
+    background: #f6ffed;
+}
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-item-group-title,
+.ant-menu-dark .ant-menu-item > span > a {
+    color: #092b00;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+    background-color: #f6ffed;
+    color: #52c41a;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected span:after,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected span:after {
+    content: '';
+    width: 15px;
+    position: absolute;
+    bottom: 19px;
+    left: 20px;
+    border-width: 0 0 2px;
+    border-style: solid;
+}
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover {
+    background-color: #f6ffed;
+    color: #52c41a;
+}
+.ant-menu-dark .ant-menu-item:hover,
+.ant-menu-dark .ant-menu-item-active,
+.ant-menu-dark .ant-menu-submenu-active,
+.ant-menu-dark .ant-menu-submenu-open,
+.ant-menu-dark .ant-menu-submenu-selected,
+.ant-menu-dark .ant-menu-submenu-title:hover {
+    color: black
+}
+
+.ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover {
+    background-color: #fff;
+}
+/* end menu custom */
+
+.logo {
+    float: left;
+    width: 120px;
+    color: #52c41a;
+}
+
+.ant-row-rtl .logo {
+    float: right;
+    margin: 16px 0 16px 24px;
+}
+
+/* custom layout */
+/*html, body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}*/
+
+.ant-layout {
+    display: block;
+    min-height: 100vh;
+}
+.ant-layout.site-layout {
+    float: left;
+    /*overflow: initial;*/
+    width: 60%;
+}
+.ant-layout-sider {
+    min-height: 100vh;
+    float: right;
+    width: 40%;
+    background: #fff;
+}
+.ant-layout-sider-children {
+    position: fixed;
+    overflow: auto;
+}
+.site-layout .site-layout-background{
+    margin: 0 16px;
+    padding: 24;
+    min-height: 280;
+}
+/* end custom layout */
+
+/* login rotate shadow */
+.rotate_shadow_left:before, .rotate_shadow_left:after {
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    background: rgba(0,0,0,0.7);
+    bottom: 7px;
+    -webkit-box-shadow: 0 5px 15px #8c8c8c;
+    -moz-box-shadow: 0 5px 15px #8c8c8c;
+    content: "";
+    left: 15px;
+    max-width: 300px;
+    position: absolute;
+    height: 20px;
+    width: 115%;
+    z-index: -1;
+}
+
+.rotate_shadow_right:before, .rotate_shadow_right:after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+    background: rgba(0,0,0,0.7);
+    bottom: 7px;
+    -webkit-box-shadow: 0 5px 15px #8c8c8c;
+    -moz-box-shadow: 0 5px 15px #8c8c8c;
+    content: "";
+    left: auto;
+    max-width: 300px;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    z-index: -1;
+    right: 15px;
+}
+/* end login rotate shadow */
+
+/* custom tab */
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+    color: #389e0d;
+}
+.ant-tabs-tab:hover {
+    color: #52c41a;
+}
+.ant-tabs-ink-bar {
+    background: #389e0d;
+}
+/* end custom tab */
+
+/* sider bar */
+.ant-layout-sider .side-calendar-card {
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+}
+.ant-layout-sider .ant-picker-calendar-header .ant-picker-calendar-mode-switch {
+    display: none;
+}
+.ant-layout-sider .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner{
+    background: #fa8c16;
+}
+.ant-layout-sider .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+    border : 1px solid #fa8c16;
+}
+
+.ant-layout-sider .ant-timeline.ant-timeline-alternate .ant-timeline-item-tail,
+.ant-layout-sider .ant-timeline.ant-timeline-right .ant-timeline-item-tail,
+.ant-layout-sider .ant-timeline.ant-timeline-label .ant-timeline-item-tail,
+.ant-layout-sider .ant-timeline.ant-timeline-alternate .ant-timeline-item-head,
+.ant-layout-sider .ant-timeline.ant-timeline-right .ant-timeline-item-head,
+.ant-layout-sider .ant-timeline.ant-timeline-label .ant-timeline-item-head,
+.ant-layout-sider .ant-timeline.ant-timeline-alternate .ant-timeline-item-head-custom,
+.ant-layout-sider .ant-timeline.ant-timeline-right .ant-timeline-item-head-custom,
+.ant-layout-sider .ant-timeline.ant-timeline-label .ant-timeline-item-head-custom {
+    left: 22%
+}
+
+.ant-layout-sider .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap,
+.ant-layout-sider .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+    margin-left: 10px;
+}
+
+.ant-layout-sider .ant-picker {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    padding: 0.5px 5px;
+}
+
+.ant-layout-sider .ant-timeline {
+    padding-top: 10px;
+}
+.ant-layout-sider .ant-timeline-item {
+    padding-bottom: 40px
+}
+.ant-layout-sider .ant-timeline.ant-timeline-label .ant-timeline-item-left .ant-timeline-item-content {
+    width: 72%;
+    left: 20%;
+}
+.ant-layout-sider .ant-timeline.ant-timeline-label .ant-timeline-item-label {
+    text-align: center;
+    margin-left: 10px;
+    width: 75px;
+}
+.ant-layout-sider .ant-timeline-item-content button {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+    color: #389e0d;
+}
+.ant-layout-sider .ant-timeline-item-content div{
+    margin-bottom: 3px;
+}
+.ant-layout-sider .ant-timeline-item-content svg {
+    font-size: 15px;
+}
+.drawer-sider-bar .icon-1 svg {
+    vertical-align: bottom;
+    font-size: 22px;
+}
+
+.drawer-sider-bar h1 {
+    color: #ff4d4f;
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.ant-drawer-title {
+    color: #237804;
+}
+
+.drawer-sider-bar .ant-btn-primary {
+    background-color: #73d13d;
+    border-color: #73d13d;
+}
+.drawer-sider-bar .ant-btn-primary:hover {
+    background-color: #95de64;
+    border-color: #73d13d;
+}
+
+.drawer-sider-bar .ant-comment-inner {
+    padding: 0 0 10px 0;
+}
+/* end sider bar */
+
+/* custom ant-grid in layout content */
+.ant-layout-content .ant-row>div {
+    margin: 6px 0;
+}
+/* end custom ant-grid in layout content */
+
+/* custom carousel */
+.carousel-wrapper .ant-col {
+    text-align: center;
+    font-size: 20px;
+}
+.carousel-wrapper .anticon {
+    margin-top: 50px;
+}
+/* end custom carousel */
+
+/* style button action */
+.main-action-button-cell {
+    background-color: #fff;
+    text-align: center;
+}
+
+.main-action-button-cell.booking-button {
+    height: 275px;
+    background-image: url('../js/assets/images/BookingButton.png');
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position-x: 30%;
+    background-position-y: 5%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #d9d9d9;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 2px #d9d9d9;
+    font-size: 22px;
+    background-color: #87e8de;
+    text-align: right;
+    padding: 0 10px;
+}
+.main-action-button-cell.booking-button:hover {
+    background-color: #e6fffb;
+    text-shadow: 0 2px 2px #434343;
+}
+.main-action-button-cell.booking-button:active {
+    background-color: #e6fffb;
+    box-shadow: 4px 4px 2px #d9d9d9;
+    transform: translateY(3px);
+}
+
+.main-action-button-cell.list-areas-button {
+    height: 185px;
+    background-image: url('../js/assets/images/ListAreasButton.jpg');
+    background-repeat: no-repeat;
+    background-size: 330px;
+    background-position-x: 30%;
+    background-position-y: 35%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #d9d9d9;
+    cursor: pointer;
+    color: #fff;
+    font-size: 40px;
+    background-color: #87e8de;
+    text-align: center;
+    padding: 40px 10px;
+    text-shadow: 0 2px 1px #000;
+}
+.main-action-button-cell.list-areas-button:hover {
+    background-color: #e6fffb;
+    text-shadow: 0 3px 1px #000;
+    opacity: 0.7;
+}
+.main-action-button-cell.list-areas-button:active {
+    background-color: #e6fffb;
+    box-shadow: 4px 4px 2px #d9d9d9;
+    transform: translateY(3px);
+}
+
+.main-action-button-cell.list-areas-button.floor-plan-button {
+    background-image: url('../js/assets/images/FloorPlanButton.jpg');
+}
+
+.main-action-button-cell.opening-times-button {
+    height: 145px;
+    background-image: url('../js/assets/images/OpeningTimesButton.jpg');
+    background-repeat: no-repeat;
+    background-size: 260px;
+    background-position-x: 30%;
+    background-position-y: 35%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #d9d9d9;
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    background-color: #87e8de;
+    text-align: center;
+    padding: 40px 10px;
+    text-shadow: 0 2px 1px #000;
+}
+.main-action-button-cell.opening-times-button:hover {
+    background-color: #e6fffb;
+    text-shadow: 0 3px 1px #000;
+    opacity: 0.7;
+}
+.main-action-button-cell.opening-times-button:active {
+    background-color: #e6fffb;
+    box-shadow: 4px 4px 2px #d9d9d9;
+    transform: translateY(3px);
+}
+
+.main-action-button-cell.domain-button {
+    height: 80px;
+    background-image: url('../js/assets/images/ListAreasButton.jpg');
+    background-repeat: no-repeat;
+    background-size: 330px;
+    background-position-x: 30%;
+    background-position-y: 35%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #d9d9d9;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+    background-color: #87e8de;
+    text-align: center;
+    padding: 0 10px;
+    text-shadow: 0 2px 1px #000;
+}
+.main-action-button-cell.domain-button:hover {
+    background-color: #e6fffb;
+    text-shadow: 0 3px 1px #000;
+    opacity: 0.7;
+}
+.main-action-button-cell.domain-button:active {
+    background-color: #e6fffb;
+    box-shadow: 4px 4px 2px #d9d9d9;
+    transform: translateY(3px);
+}
+
+.main-action-button-cell.payment-gateways-button {
+    height: 80px;
+    background-image: url('../js/assets/images/PaymentGatewaysButton.jpg');
+    background-repeat: no-repeat;
+    background-size: 205px;
+    background-position-x: 30%;
+    background-position-y: 50%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #d9d9d9;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+    background-color: #87e8de;
+    text-align: center;
+    padding: 0 10px;
+    text-shadow: 0 2px 1px #000;
+}
+.main-action-button-cell.payment-gateways-button:hover {
+    background-color: #e6fffb;
+    text-shadow: 0 3px 1px #000;
+    opacity: 0.7;
+}
+.main-action-button-cell.payment-gateways-button:active {
+    background-color: #e6fffb;
+    box-shadow: 4px 4px 2px #d9d9d9;
+    transform: translateY(3px);
+}
+
+.main-action-button-cell.info-button {
+    height: 120px;
+    background-image: url('../js/assets/images/EditInfoButton.jpg');
+    background-repeat: no-repeat;
+    background-size: 330px;
+    background-position-x: 30%;
+    background-position-y: 35%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #d9d9d9;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 2px #d9d9d9;
+    background-color: #87e8de;
+    font-size: 40px;
+    text-align: center;
+    padding: 25px 10px;
+    text-align: center;
+    text-shadow: 0 2px 1px #000;
+}
+.main-action-button-cell.info-button:hover {
+    background-color: #e6fffb;
+    text-shadow: 0 3px 1px #000;
+    opacity: 0.7;
+}
+.main-action-button-cell.info-button:active {
+    background-color: #e6fffb;
+    box-shadow: 4px 4px 2px #d9d9d9;
+    transform: translateY(3px);
+}
+
+.main-action-button-cell.tables-management-button {
+    height: 80px;
+    background-image: url('../js/assets/images/TablesManagementButton.jpg');
+    background-repeat: no-repeat;
+    background-size: 315px;
+    background-position-x: 30%;
+    background-position-y: 90%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #d9d9d9;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+    background-color: #87e8de;
+    text-align: center;
+    padding: 0 10px;
+    text-shadow: 0 2px 1px #000;
+}
+.main-action-button-cell.tables-management-button:hover {
+    background-color: #e6fffb;
+    text-shadow: 0 3px 1px #000;
+    opacity: 0.7;
+}
+.main-action-button-cell.tables-management-button:active {
+    background-color: #e6fffb;
+    box-shadow: 4px 4px 2px #d9d9d9;
+    transform: translateY(3px);
+}
+/* end style button action */
+
+/* custom carousel item*/
+.custom-main-carousel-item {
+    width: 225px;
+    height: 180px;
+    cursor: pointer;
+    text-shadow: 0 1px 1px #bfbfbf;
+    position: relative;
+}
+.custom-main-carousel-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+.custom-main-carousel-item.item1::before {
+    background-image: url('../js/assets/images/Carousel1.jpg');
+}
+.custom-main-carousel-item.item2::before {
+    background-image: url('../js/assets/images/Carousel2.jpg');
+}
+.custom-main-carousel-item.item3::before {
+    background-image: url('../js/assets/images/Carousel3.jpg');
+}
+.custom-main-carousel-item .content {
+    position: relative;
+}
+.custom-main-carousel-item.active::before {
+    opacity: 1;
+}
+.custom-main-carousel-item.active {
+    text-shadow: 0 2px 2px #8c8c8c;
+    opacity: 0.9;
+}
+.custom-main-carousel-item:hover {
+    text-shadow: 0 2px 1px #8c8c8c;
+    opacity: 0.9;
+}
+.custom-main-carousel-item:hover h1,
+.custom-main-carousel-item.active h1 {
+    color: #00474f;
+}
+.custom-main-carousel-item:hover p,
+.custom-main-carousel-item.active p {
+    color: #00474f;
+}
+.custom-main-carousel-item h1 {
+    margin-bottom: 0.8em;
+    color: #006d75;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0 1px 1px #bfbfbf;
+}
+.custom-main-carousel-item p {
+    margin-bottom: 0.2em;
+    color: #006d75;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    text-shadow: 0 1px 1px #bfbfbf;
+}
+.custom-main-carousel-item .ant-ribbon {
+    top: -18px;
+}
+.custom-main-carousel-item .ant-ribbon.ant-ribbon-placement-end {
+    right: -32px;
+}
+/* end custom carousel*/
+
+/* disable text selected */
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+svg text {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* end disable text selected */
